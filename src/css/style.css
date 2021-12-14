@@ -10,9 +10,20 @@
 
 .chameleon-animation{
     color: red;
+    transition: color 2s;
 }
 .chameleon-animation:hover{
     color: blue;
+    transition: color 2s;
+}
+
+.blink {
+    animation: blink 1s linear infinite 2s alternate-reverse;
+    @keyframes blink {
+        100% {
+            opacity: 0;
+        }
+    }
 }
 
 /* TODO: write your code here */
@@ -32,4 +43,8 @@
     font-size: xx-large;
     background: seagreen;
     color: white;
+}
+
+.coin-animation {
+    animation: coin-animation 10s infinite;
 }
