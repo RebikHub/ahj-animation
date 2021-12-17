@@ -4,6 +4,8 @@ export default class Liker {
   }
 
   events() {
-    console.log('event');
-}
+    this.button.addEventListener('click', () => {
+      console.log('hi');
+    });
+  }
 }
