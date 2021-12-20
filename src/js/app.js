@@ -4,10 +4,10 @@ import Liker from './liker';
 
 console.log('app started');
 
-const coll = new Collapse();
-const call = new CallbackChat();
-const lik = new Liker();
+const collapse = new Collapse();
+const callbackChat = new CallbackChat();
+const liker = new Liker();
 
-coll.events();
-call.events();
-lik.events();
+collapse.events();
+callbackChat.events();
+liker.events();

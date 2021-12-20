@@ -65,7 +65,7 @@
     box-shadow: 2px 2px 6px rgb(218, 218, 218);
     visibility: visible;
     opacity: 1;
-    transition: visibility 0.2s linear 0s, opacity 0.2s;
+    transition: visibility 0.2s linear 0s, opacity 0.2s ease-in-out, transform 0.2 linear;
 }
 
 .call-form-header {
@@ -99,7 +99,7 @@
     box-shadow: 0 3px 3px #dbb4b4;
     opacity: 1;
     visibility: visible;
-    transition: visibility 0.2s linear 0s, transform 0.3s, opacity 0.2s;
+    transition: visibility 0.2s linear 0s, transform 0.3s ease-in-out, opacity 0.2s;
 }
 
 .call-btn:hover {
@@ -110,7 +110,7 @@
 
 .none {
     visibility: hidden;
-    transform: scale(0.9);
+    transform: scale(0.8);
     opacity: 0;
     transition: visibility 0.2s linear 0s, opacity 0.2s, transform 0.1s linear 0s;
 }
@@ -118,7 +118,7 @@
 /* Liker */
 
 .lik-btn {
-    margin: 200px auto 20px auto;
+    margin: auto auto 20px auto;
     color: white;
     background-color: rgb(255, 56, 56);
     border: 0;
@@ -126,4 +126,127 @@
     cursor: pointer;
     width: 110px;
     height: 30px;
+}
+
+.img {
+    top: 208px;
+    left: 389px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/heart.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.heart-1 {
+    animation: heart-1 0.5s ease-out;
+}
+
+@keyframes heart-1 {
+    0% {
+        top: 208px;
+        left: 389px;
+    }
+    25% {
+        top: 156px;
+        left: 339px;
+    }
+    50% {
+        top: 104px;
+        left: 439px;
+    }
+    75% {
+        top: 52px;
+        left: 339px;
+    }
+    100% {
+        opacity: 0.2;
+        top: 0px;
+        left: 389px;
+    }
+}
+
+.heart-2 {
+    animation: heart-2 0.5s ease-out;
+}
+
+@keyframes heart-2 {
+    0% {
+        top: 208px;
+        left: 389px;
+    }
+    25% {
+        top: 156px;
+        left: 389px;
+    }
+    50% {
+        top: 104px;
+        left: 439px;
+    }
+    75% {
+        top: 52px;
+        left: 339px;
+    }
+    100% {
+        opacity: 0.2;
+        top: 0px;
+        left: 389px;
+    }
+}
+
+.heart-3 {
+    animation: heart-3 0.5s ease-out;
+}
+
+@keyframes heart-3 {
+    0% {
+        top: 208px;
+        left: 389px;
+    }
+    25% {
+        top: 156px;
+        left: 389px;
+    }
+    50% {
+        top: 104px;
+        left: 339px;
+    }
+    75% {
+        top: 52px;
+        left: 439px;
+    }
+    100% {
+        opacity: 0.2;
+        top: 0px;
+        left: 389px;
+    }
+}
+
+.heart-4 {
+    animation: heart-4 0.5s ease-out;
+}
+
+@keyframes heart-4 {
+    0% {
+        top: 208px;
+        left: 389px;
+    }
+    25% {
+        top: 156px;
+        left: 439px;
+    }
+    50% {
+        top: 104px;
+        left: 389px;
+    }
+    75% {
+        top: 52px;
+        left: 339px;
+    }
+    100% {
+        opacity: 0.2;
+        top: 0px;
+        left: 389px;
+    }
 }
